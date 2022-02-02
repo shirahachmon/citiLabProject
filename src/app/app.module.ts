@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {HttpClientModule } from '@angular/common/http';
+import { CountriesTableComponent } from './countries-table/countries-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CountriesTableComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

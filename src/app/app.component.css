@@ -1,0 +1,61 @@
+.all-content{
+  height: 100%;
+  overflow: hidden;
+}
+
+#header{
+    width: 100%;
+    height: 10%;
+    background-color: pink;
+    text-align: center;
+    padding: 3px;
+}
+#header .left-icon-header{
+  font-size: 65px;
+  float: left;
+  color: #171111e8;
+  margin-top: 10px;
+}
+
+#header #footer-text{
+  float: left;
+  display: flex;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 20px;
+}
+#footer{
+  background-color: #e5bebe;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+#footer .fa{
+  font-size: 33px;
+    padding: 5px;
+    margin-top: 12px;
+    display: flex;
+
+}
+  .container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+  }
+
+   .container .table-container{
+    float: right;
+    width: 80%;
+    overflow-y: auto;
+    overflow-x: auto;
+    }
+
+    .container .left-content{
+      float: left;
+      width: 20%;
+      border-style: ridge;
+      margin: 3px;
+    }
+
+  

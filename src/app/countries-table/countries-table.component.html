@@ -1,0 +1,18 @@
+    <table>
+    <tr>
+      <th>Capital</th>
+      <th>Code</th>
+      <th>Continent</th>
+      <th>Currency</th>
+      <th>Name</th>
+      <th>Phone</th>
+    </tr>
+    <tr *ngFor="let country of countries" id="country">
+        <td>{{country.capital}}</td>
+        <td>{{country.code}}</td>
+        <td>{{country.continent.code}} ,{{country.continent.name}} </td>
+        <td>{{country.currency}}</td>
+        <td>{{country.name}}</td>
+        <td>{{country.phone}}</td>
+    </tr>
+  </table>
