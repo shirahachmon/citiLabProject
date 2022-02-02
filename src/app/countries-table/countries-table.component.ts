@@ -13,7 +13,7 @@ export interface CountryElement {
   name: string;
   phone: string;
 }
-//  aa
+
 @Component({
   selector: 'app-countries-table',
   templateUrl: './countries-table.component.html',
