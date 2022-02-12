@@ -1,0 +1,51 @@
+<div class="background">
+    <div class="container">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>ADD</span>
+              <span>RECORD</span>
+            </div>
+            <div class="app-contact">By InfluShira Company</div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+          <form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
+            <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="employeeService.selectedEmployee._id">
+                <div class="app-form-group">
+                    <input type="text"class="app-form-control" placeholder="NAME" name="name" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.name">
+                </div>
+                <div class="app-form-group">
+                    <input type="text" name="position"  class="app-form-control" placeholder="POSITION" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.position" >
+                </div>
+                <div class="app-form-group">
+                    <input type="text" name="office"  class="app-form-control" placeholder="OFFICE" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.office">
+                </div>
+                <div class="app-form-group">
+                    <input type="text" name="salary" #name="ngModel" class="app-form-control" placeholder="SALARY" [(ngModel)]="employeeService.selectedEmployee.salary">
+                </div>
+            <div class="app-form-group buttons">
+                <button class="app-form-button" (click)="resetForm(employeeForm)">Reset</button>
+                <button class="app-form-button" type="submit" [disabled]="!employeeForm.valid">Submit</button>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
